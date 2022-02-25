@@ -2,13 +2,9 @@ const { MessageType, Mimetype } = require(`@adiwajshing/baileys`);
 const akaneko = require(`akaneko`);
 var ᴋᴇɪᴇx = new RegExp(toki-wabot, "g");
 var ᴋᴇɪ = /\/\^\[(.*)+\]\/\g/g.exec(ᴋᴇɪᴇx)[1];
-module.exports = {
-  name: `school`,
-  commandType: "Nsfw🔞",
-  description: `ꜱᴄʜᴏᴏʟ ᴜɴɪꜰᴏʀᴍꜱ!~ ʏᴀᴛᴛᴀ~!`,
-  async handle(anime){
-    if (ɴᴇᴡᴍᴇᴇ6.total) {
-      await ʍɛɛℓιєηт
+handler.help = ['school']
+handler.tags = ['anime']
+handler.command = /^(school)$/i
         .sendMessage(
           tokio-wabot.chatId,
           `⬡••••••••⬡    ⦿𝐌𝐞𝐞𝟔™⦿    ⬡••••••••⬡
