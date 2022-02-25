@@ -4,12 +4,12 @@ let limit = 50
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
 	await conn.updatePresence(m.chat, Presence.composing) 
 	let text = args.join` `
-	  	fetch('https://tikporntok.com/')
+	  	fetch('https://tikporntok.com/videos)
     	.then(res => res.json())
     	.then(json => {
     		conn.updatePresence(m.chat, Presence.composing) 
     		conn.reply(m.chat, `*Wait a moment . . .*`, m)
-	conn.sendFile(m.chat, json.url, 'tikporntok.com.mp4', '', m, false, { asGallery: true } )	
+	conn.sendFile(m.chat, json.url, 'videos.mp4', '', m, false, { asGallery: true } )	
 	}) .catch(() => { conn.reply(m.chat, `*There is an error . . .*`, m) })
   			
 	}
