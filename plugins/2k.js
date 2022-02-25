@@ -9,13 +9,13 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
     	.then(json => {
     		conn.updatePresence(m.chat, Presence.composing) 
     		conn.reply(m.chat, `*Wait a moment . . .*`, m)
-	conn.sendFile(m.chat, json.url, 'tikporntok.mp4', '', m, false, { asGallery: true } )	
+	conn.sendFile(m.chat, json.url, 'tikporntok.com.mp4', '', m, false, { asGallery: true } )	
 	}) .catch(() => { conn.reply(m.chat, `*There is an error . . .*`, m) })
   			
 	}
 handler.help = ['tikporn']
 handler.tags = ['anime']
-handler.command = /^(tikporntok)$/i
+handler.command = /^(tikporn)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
